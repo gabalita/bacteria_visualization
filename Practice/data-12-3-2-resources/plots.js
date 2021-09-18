@@ -1,3 +1,4 @@
+// Define the initialize function
 function init() {
   var selector = d3.select("#selDataset");
 
@@ -12,13 +13,16 @@ function init() {
     });
 })}
 
+// Call the function to pre-populate the page.
 init();
 
+// The optionChanged function will be called within our index.html file.
 function optionChanged(newSample) {
   buildMetadata(newSample);
   buildCharts(newSample);
 }
 
+// Curate the metadata that you want to display
 function buildMetadata(sample) {
   d3.json("samples.json").then((data) => {
     var metadata = data.metadata;
