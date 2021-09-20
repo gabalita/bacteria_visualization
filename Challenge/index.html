@@ -12,7 +12,7 @@
   
 </head>
 
-<body>
+<body class='p-3 mb-2 bg-success text-white'>
 
   <div class="container">
     <!-- Header Title -->
@@ -22,8 +22,12 @@
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
+    
 
     <!-- Dashboard Contents -->
+    <div class="row">
+      <p class='lead'> This dashboard allow users to understand more about the bacteria in their navel. Specifically, each volunteer should be able to identify the top 10 bacterial species in their belly buttons. That way, if Improbable Beef identifies a species as a candidate to manufacture synthetic beef, a volunteers will be able to identify whether that species is found in their navel. </p>
+    </div>
     <div class="row">
       <div class="col-md-2">
         <div class="well">
@@ -38,13 +42,14 @@
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-6">
         <div id="bar-plot"></div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-4">
         <div id="gauge"></div>
       </div>
     </div>
+    <br></br>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble-chart"></div>
@@ -57,3 +62,9 @@
 </body>
 
 </html>
+
+<!-- Deliverable 4 changes: -->
+<!-- 1. Added introduction to top of page -->
+<!-- 2. Made the bar chart bigger relative to gauge, col-md-6 vs col-md-4 -->
+<!-- 3. Added simple Green background color to page. -->
+<!-- 4. Added line break between first and second rows of page. -->

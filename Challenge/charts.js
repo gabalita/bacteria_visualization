@@ -74,16 +74,10 @@ function init() {
         var otu_idsResult = resultID.otu_ids;
         var otu_labels = resultID.otu_labels;
         var sample_values = resultID.sample_values;
-        // console.log('OTU results are...', otu_idsResult);
-        // console.log('OTU labels are...', otu_labels);
-        // console.log('OTU sample_values are...', sample_values);
         
         
 
       // 7. Create the tick marks for the bar chart.
-      // Hint: Get the the top 10 otu_ids and map them in descending order  
-      //  so the otu_ids with the most bacteria are last. 
-  
       var topSampleValues = sample_values.slice(0,10);
       var topOTU_IDs = otu_idsResult.map(id => (('OTU ') + String(id))).slice(0,10);
       var topOTU_labels = otu_labels.slice(0,10);
@@ -175,7 +169,7 @@ function init() {
       
       // 5. Create the layout for the gauge chart.
       var gaugeLayout = { 
-        title: 'Belly Button Washing Frequency<br><sub>Scrubs per Week</sub>'
+        title: '<span style="font-weight:bold"> Belly Button Washing Frequency<br><sub>Scrubs per Week</sub>'
        
       };
   
