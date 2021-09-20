@@ -8,8 +8,8 @@
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="charts.js"></script>
+  
+  
 </head>
 
 <body>
@@ -39,7 +39,7 @@
         </div>
       </div>
       <div class="col-md-5">
-        <div id="bar"></div>
+        <div id="bar-plot"></div>
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
@@ -47,10 +47,13 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <div id="bubble"></div>
+        <div id="bubble-chart"></div>
       </div>
     </div>
   </div>
+  <!-- Must load plotly before running the charts file -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
 </body>
 
 </html>

@@ -125,7 +125,7 @@ function init() {
   
       // 2. Create the layout for the bubble chart.
       var bubbleLayout = {
-        title: 'Bubble Chart',
+        title: 'Bacteria Cultures per Sample',
         xaxis: {title:'Bactiera ID'},
         yaxis: {title:'Count of Bacteria Culture'},
         height: 600,
